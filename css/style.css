@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   background: #ccc;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -20,17 +22,35 @@ main {
   height: 100vh;
   min-width: 300px;
   padding: 25px;
-  background: #dcdde1;
+  background: #f5f6fa;
   color: #2f3640;
 }
 
+main .main-section {
+  margin-bottom: 30px;
+}
+
 main .main-section header {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 1.5em;
 }
 
 main .main-section p {
-  font-size: 16px;
+  font-size: 1em;
+  max-width: 70%;
+}
+
+main .main-section .list li {
+  line-height: 1.5em;
+}
+
+main .main-section hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  opacity: 0.2;
+  width: 70%;
+  margin: 20px 0;
 }
 
 .left-slider {
@@ -41,7 +61,7 @@ main .main-section p {
 }
 
 .left-slider header {
-  font-size: 28px;
+  font-size: 1.7em;
   margin: 10px;
   text-align: center;
   line-height: 32px;
