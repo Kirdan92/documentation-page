@@ -12,33 +12,87 @@
 		<main id="#main-doc">
 			<section class="main-section" id="introduction">
 				<header>Introduction</header>
-				<p>HTML is the standard markup language for creating Web pages.</p>
+				<p>JavaScript can "display" data in different ways:</p>
 				<ul class="list">
-					<li>HTML stands for Hyper Text Markup Language</li>
-					<li>HTML describes the structure of Web pages using markup</li>
-					<li>HTML elements are the building blocks of HTML pages</li>
-					<li>HTML elements are represented by tags</li>
-					<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+					<li>Writing into an HTML element, using innerHTML.</li>
+					<li>Writing into the HTML output using document.write().</li>
+					<li>Writing into an alert box, using window.alert().</li>
+					<li>Writing into the browser console, using console.log().</li>
 				</ul>
-				<p>HTML was made by the World Wide Web Consortium (W3C). There are several versions of HTML. As of September 2018, the current standard of HTML is dubbed HTML 5 and is specifically at version 5.2.</p>
+				<p>HTML tags are element names surrounded by angle brackets:</p>
+				<div class="code-container">
+					<code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code>
+				</div>	
 				<hr>
 			</section>
-			<section class="main-section" id="tags">
-				<header>HTML Tags</header>
-				<p>HTML tags are element names surrounded by angle brackets:</p>
-				<div class="code-container"><pre><code><tagname>some content here...</tagname></code></pre></div>
+			<section class="main-section" id="jsprograms">
+				<header>JavaScript Programs</header>
+				<p>A <strong>computer program</strong> is a list of "instructions" to be "executed" by a computer.</p>
+				<p>In a programming language, these programming instructions are called <strong>statements.</strong></p>
+				<p>A <strong> JavaScript program</strong> is a list of programming statements.</p>
+				<div class="highlight">In HTML, JavaScript programs are executed by the web browser.</div>
+				<hr>
 			</section>
-			<section class="main-section" id="test">
-				<header></header>
-				<p></p>
+			<section class="main-section" id="statements">
+				<header>JavaScript Statements</header>
+				<p>JavaScript statements are composed of:</p>
+				<ul>
+					<li>Values</li>
+					<li>Operator</li>
+					<li>Expressions</li>
+					<li>Keywords</li>
+					<li>Comment</li>
+				</ul>
+				<p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+				<div class="code-container">
+					<code>document.getElementById("demo").innerHTML = "Hello Dolly.";</code>
+				</div>
+				<p>Most JavaScript programs contain many JavaScript statements.</p>
+				<p>The statements are executed, one by one, in the same order as they are written.</p>
+				<div class="highlight">JavaScript programs (and JavaScript statements) are often called JavaScript code.</div>
 			</section>
-			<section class="main-section" id="test">
-				<header></header>
-				<p></p>
+			<section class="main-section" id="variables">
+				<header>JavaScript Variables</header>
+				<p>JavaScript variables are containers for storing data values.</p>
+				<p>In this example, x, y, and z, are variables:</p>
+				<div class="code-container">
+						<code>
+							var x = 5; <br>
+							var y = 6; <br>
+							var z = x + y;
+						</code>
+				</div>
+				<p>From the example above, you can expect:</p>
+				<ul>
+					<li>x stores the value 5</li>
+					<li>y stores the value 6</li>
+					<li>z stores the value 11</li>
+				</ul>
 			</section>
-			<section class="main-section" id="test">
-				<header></header>
-				<p></p>
+			<section class="main-section" id="operators">
+				<header>Operators</header>
+				<p>Assign values to variables and add them together:</p>
+				<div class="code-container">
+						<code>
+							var x = 5; <span class="comment-span">// assign the value 5 to x</span> <br>
+							var y = 6; <span class="comment-span">// assign the value 2 to y</span> <br>
+							var z = x + y; <span class="comment-span">// assign the value 7 to z (x + y)</span> <br>
+						</code>
+				</div>
+				<p>The assignment operator (=) assigns a value to a variable.</p>
+				<div class="code-container">
+						<code>
+							var x = 10;
+						</code>
+				</div>
+				<p>The assignment operator (=) assigns a value to a variable.</p>
+				<div class="code-container">
+						<code>
+							var x = 5; <br>
+							var y = 2; <br>
+							var z = x + y;
+						</code>
+				</div>
 			</section>
 		</main>
 		<div class="left-slider">
@@ -46,21 +100,10 @@
 			<nav id="navbar">
 				<ul>
 					<li><a href="#introduction">Introduction</a></li>
-					<li><a href="#tags">HTML Tags</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 1</a></li>
-
+					<li><a href="#jsprograms">JavaScript Programs</a></li>
+					<li><a href="#statements">JavaScript Statements</a></li>
+					<li><a href="#variables">JavaScript Variables</a></li>
+					<li><a href="#operators">Operators</a></li>
 				</ul>
 			</nav>
 		</div>
