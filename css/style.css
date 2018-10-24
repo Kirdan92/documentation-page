@@ -84,18 +84,18 @@ main .main-section hr {
   border-right: 3px solid #7f8fa6;
 }
 
-.left-slider header {
-  font-size: 1.7em;
-  margin: 10px;
-  text-align: center;
-  line-height: 32px;
-}
-
 .left-slider #navbar {
   overflow-y: auto;
   overflow-x: hidden;
   min-height: 200px;
   height: 90%;
+}
+
+.left-slider #navbar header {
+  font-size: 1.7em;
+  margin: 10px;
+  text-align: center;
+  line-height: 32px;
 }
 
 #navbar ul {
@@ -124,6 +124,36 @@ main .main-section hr {
 
 #navbar ul li:last-child {
   border-bottom: 2px solid #7f8fa6;
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-areas: "left" "main";
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 10px;
+    background: #f5f6fa;
+  }
+  main {
+    margin-top: 260px;
+  }
+  .left-slider {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: none;
+  }
+  #navbar ul li {
+    padding: 10px 30px;
+    border-left: 2px solid #7f8fa6;
+    border-right: 2px solid #7f8fa6;
+  }
+  #navbar ul li:active {
+    background: #2f3542;
+  }
+  #navbar ul li:active a {
+    color: #f1f1f1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
